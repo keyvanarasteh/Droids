@@ -3,9 +3,9 @@
 *Flutter*UX* **TeamWork**
 
 >developers:
-> Doğan Sarı 211216018 Dogansari
->>Anıl Şentürk 211216020 Yuutsu
->>>Muhammed Karataş 211216062 muhammedkaratas1
+>> Doğan Sarı 211216018 Dogansari
+>>>Anıl Şentürk 211216020 Yuutsu
+>>>>Muhammed Karataş 211216062 muhammedkaratas1
 
 [Supervisor: Keyvan Arasteh](https://github.com/keyvanarasteh/)
 
