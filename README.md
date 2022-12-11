@@ -1,6 +1,6 @@
 # Droids
 
-*Flutter*UX* **TeamWork**
+*Flutter*UX* **Droids**
 
 >developers:
 >> Doğan Sarı 211216018 Dogansari
