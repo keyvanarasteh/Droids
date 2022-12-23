@@ -8,7 +8,7 @@ class MediaDrawerMini extends StatelessWidget {
    @override
   Widget build(BuildContext context) {
     return Container(
-      width: 160,
+      width:  160,
       color:Color.fromARGB(162, 25, 19, 33),
       child:Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,  //Menü column konumlandırma
