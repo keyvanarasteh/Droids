@@ -20,3 +20,22 @@
 
 **2.Project 22/12/2022**
 ![hafta2](https://user-images.githubusercontent.com/115783349/209242479-22afd2d3-0376-400f-b4c7-986314ffdf52.jpg)
+
+**3.Project 29/12/2022**
+**
+Hisse Ekranı Eklendi
+Hisselerin Takip Ekranı Eklendi
+Hisse Takip Ekranın İçerisinde Hisse Grafiği Eklendi Sadece Bitcoin Gözükmekte Canlı
+Padding Ve Genel Yapı Fixlendi
+Uygulama Haline Getirildi-Uygulama Icon Eklendi-Uygulama İsmi Eklendi
+Kart Ekleme Menüsü Eklendi
+Profil Ayarları Kısmına Mobil Kullanıcıları Erişimi İçi Menüler Eklendi 
+SafeArea Eklendi AppBar Taşma Sorunu Fix
+Drawer Tasarımında Değişikliğe Gidildi**
+
+ 
+![sc1](https://user-images.githubusercontent.com/115783349/210027829-0e59f6ba-9e6c-4f4e-914b-40a26d3adb88.jpg)
+![sc2](https://user-images.githubusercontent.com/115783349/210027836-ad162b54-7fed-4382-b44a-ad632898b0c5.png)
+![sc5](https://user-images.githubusercontent.com/115783349/210027842-885d8410-ddbc-46fc-bc7b-5ef1bcbfa01e.png)
+![sc3](https://user-images.githubusercontent.com/115783349/210027854-27efbb1c-cdeb-4a34-a4ef-81dddde3f178.png)
+![sc4](https://user-images.githubusercontent.com/115783349/210027856-ef953255-d7fc-4928-b9eb-a6c016a74295.png)
