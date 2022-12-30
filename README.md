@@ -22,7 +22,7 @@
 ![hafta2](https://user-images.githubusercontent.com/115783349/209242479-22afd2d3-0376-400f-b4c7-986314ffdf52.jpg)
 
 **3.Project 29/12/2022**
-
+Project File 3/Droids_App  En Güncel Dosyamız İçerisinde Sdk İndirip Telefona Kurulum Yapabilirsiniz
 >Hisse Ekranı Eklendi
 >>Hisselerin Takip Ekranı Eklendi
 >>>Hisse Takip Ekranın İçerisinde Hisse Grafiği Eklendi Sadece Bitcoin Gözükmekte Canlı
