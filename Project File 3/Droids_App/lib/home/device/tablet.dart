@@ -3,7 +3,6 @@ import 'package:proje/home/screen/card.dart';
 import 'package:proje/home/screen/chart.dart';
 import 'package:proje/home/screen/last_transaction.dart';
 import 'package:proje/home/screen/send_money.dart';
-import 'package:proje/common/mediaappbar.dart';
 
 class Tablet extends StatefulWidget {
   const Tablet({super.key});

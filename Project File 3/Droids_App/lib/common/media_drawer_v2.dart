@@ -17,11 +17,12 @@ class _MediaDrawerMiniV2State extends State<MediaDrawerMiniV2> {
   Widget build(BuildContext context) {
     return Drawer(
       backgroundColor: Color(0xFF241B2E),
-      width: MediaQuery.of(context).size.width,
+      width: 288,
       child: Container(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
+            // Genel Kullanıcı Profil + Bilgi Headr kısmı
             UserAccountsDrawerHeader(
               accountName: Text('Mr. Chaychi'),
               accountEmail: Text('chaychi@gmail.com'),
@@ -44,13 +45,14 @@ class _MediaDrawerMiniV2State extends State<MediaDrawerMiniV2> {
               mainAxisAlignment:
                   MainAxisAlignment.spaceBetween, //Menü column konumlandırma
               children: [
+                // Menu ListTile
                 Column(
                   children: [
                     SizedBox(
                       height: 40,
                     ),
-                    ListTile(
                       // Menu Home
+                    ListTile(
 
                       leading: Icon(Icons.home),
                       title: Text("Home"),
@@ -58,24 +60,24 @@ class _MediaDrawerMiniV2State extends State<MediaDrawerMiniV2> {
                         Navigator.of(context).pushNamed("/Home_Screen");
                       },
                     ),
-                    ListTile(
                       // Menu Invocies
+                    ListTile(
                       leading: Icon(Icons.person),
                       title: Text("Profile"),
                       onTap: () {
                         Navigator.of(context).pushNamed("/Profile_Screen");
                       },
                     ),
-                    ListTile(
                       //Menu Withdraw
+                    ListTile(
                       leading: Icon(Icons.insert_chart_outlined_rounded),
-                      title: Text("Shape"),
+                      title: Text("Share"),
                       onTap: () {
                         Navigator.of(context).pushNamed("/Shape_Screen");
                       },
                     ),
-                    ListTile(
                       //Menu My Bank
+                    ListTile(
                       leading: Icon(Icons.credit_card),
                       title: Text("Add Card"),
                       onTap: () {
@@ -83,20 +85,20 @@ class _MediaDrawerMiniV2State extends State<MediaDrawerMiniV2> {
                       },
                     ),
                     Divider(),
-                    ListTile(
                       //Menu My Bank
+                    ListTile(
                       leading: Icon(Icons.notifications),
                       title: Text("Request"),
                       onTap: () => null,
                     ),
-                    ListTile(
                       //Menu My Bank
+                    ListTile(
                       leading: Icon(Icons.description_outlined),
                       title: Text("Policies"),
                       onTap: () => null,
                     ),
-                    ListTile(
                       //Menu Settings
+                    ListTile(
                       leading: Icon(Icons.settings),
                       title: Text("Settings"),
                       onTap: () => null,
@@ -106,8 +108,8 @@ class _MediaDrawerMiniV2State extends State<MediaDrawerMiniV2> {
               ],
             ),
             Divider(),
-            ListTile(
               //Menu Logout
+            ListTile(
               leading: Icon(Icons.logout_outlined),
               title: Text("Logout"),
               onTap: () => null,

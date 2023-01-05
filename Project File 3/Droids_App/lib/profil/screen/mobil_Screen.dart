@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, prefer_const_constructors, avoid_print, constant_identifier_names
+// ignore_for_file: unnecessary_import, prefer_const_constructors, file_names, constant_identifier_names, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -68,7 +68,7 @@ class _MobilScreenState extends State<MobilScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF191321),
+      backgroundColor: Color(0xFF191321),
       body: Container(
         width: MediaQuery.of(context).size.width + 100,
         height: MediaQuery.of(context).size.height / 1.15,
@@ -84,7 +84,6 @@ class _MobilScreenState extends State<MobilScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 // Edit Photo , Button Start
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -132,15 +131,16 @@ class _MobilScreenState extends State<MobilScreen> {
                 ),
                 // Edit Photo , Button End
                 SizedBox(
-                  height: 0,
+                  height: 10,
                 ),
-                // Name Text Start
-                Padding(
-                  padding: const EdgeInsets.only(left: 18.0),
-                  child: Column(
-                    children: [
-                      Container(
-                        width: double.infinity,
+                // Textfield , BoxDecoration and Gender Parts Start
+                Column(
+                  children: [
+                    // Name Text Start
+                    Container(
+                      width: double.infinity,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 25),
                         child: Text(
                           "Name",
                           style: TextStyle(
@@ -150,63 +150,69 @@ class _MobilScreenState extends State<MobilScreen> {
                           ),
                         ),
                       ),
-                      // Name Text End
-                      SizedBox(
-                        height: 15,
-                      ),
-                      // Write Your Name Box
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                        child: Container(
-                          height: 34,
-                          decoration: BoxDecoration(
+                    ),
+                    // Name Text End
+                    SizedBox(
+                      height: 15,
+                    ),
+                    // Write Your Name Box
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color(0xFF46414D),
+                          border: Border.all(
                             color: Color(0xFF46414D),
-                            border: Border.all(color: Color(0xFF46414D)),
-                            borderRadius: BorderRadius.circular(5),
+                            width: 1.0,
                           ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(4.0),
-                            child: TextField(
-                              decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: "Write your name"),
+                          borderRadius: BorderRadius.circular(9),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 8),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: 'Write your name',
+                              border: InputBorder.none,
                             ),
                           ),
                         ),
                       ),
-                      // Write Your Name Box End
-                      SizedBox(
-                        height: 15,
-                      ),
-                      // 1st paragraph Start
-                      Padding(
-                        padding: const EdgeInsets.only(left: 35),
-                        child: Wrap(
-                          children: [
-                            Container(
-                              width: double.infinity,
-                              child: Wrap(
-                                children: [
-                                  Text(
-                                    "Help people discover your account using a familiar name.\nYou can change your name only 2 times in 14 days.",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 14,
-                                    ),
+                    ),
+                    // Write Your Name Box End
+                    SizedBox(
+                      height: 15,
+                    ),
+                    // 1st paragraph Start
+                    Padding(
+                      padding: const EdgeInsets.only(left: 22),
+                      child: Wrap(
+                        children: [
+                          Container(
+                            width: double.infinity,
+                            child: Wrap(
+                              children: [
+                                Text(
+                                  "Help people discover your account using a familiar name.\nYou can change your name only 2 times in 14 days.",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
-                      // 1st paragraph End
-                      SizedBox(
-                        height: 15,
-                      ),
-                      // Username Text Start
-                      Container(
-                        width: double.infinity,
+                    ),
+                    // 1st paragraph End
+                    SizedBox(
+                      height: 15,
+                    ),
+                    // Username Text Start
+                    Container(
+                      width: double.infinity,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 25),
                         child: Text(
                           "Username",
                           style: TextStyle(
@@ -216,37 +222,43 @@ class _MobilScreenState extends State<MobilScreen> {
                           ),
                         ),
                       ),
-                      // Username Text End
-                      SizedBox(
-                        height: 15,
-                      ),
-                      // Write Your Username Box Start
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                        child: Container(
-                          height: 34,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFFF46414D),
-                            border: Border.all(color: Color(0xFFFF46414D)),
-                            borderRadius: BorderRadius.circular(5),
+                    ),
+                    // Username Text End
+                    SizedBox(
+                      height: 15,
+                    ),
+                    // Write Your Username Box Start
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color(0xFF46414D),
+                          border: Border.all(
+                            color: Color(0xFF46414D),
+                            width: 1.0,
                           ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(4.0),
-                            child: TextField(
-                              decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: "Write your username"),
+                          borderRadius: BorderRadius.circular(9),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 8),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: 'Write your username',
+                              border: InputBorder.none,
                             ),
                           ),
                         ),
                       ),
-                      // Write Your Username Box End
-                      SizedBox(
-                        height: 15,
-                      ),
-                      // E-mail Text Start
-                      Container(
-                        width: double.infinity,
+                    ),
+                    // Write Your Username Box End
+                    SizedBox(
+                      height: 15,
+                    ),
+                    // E-mail Text Start
+                    Container(
+                      width: double.infinity,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 25),
                         child: Text(
                           "E-mail",
                           style: TextStyle(
@@ -256,37 +268,43 @@ class _MobilScreenState extends State<MobilScreen> {
                           ),
                         ),
                       ),
-                      // E-mail Text End
-                      SizedBox(
-                        height: 15,
-                      ),
-                      // Write Your E-mail Address Box Start
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                        child: Container(
-                          height: 34,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFFF46414D),
-                            border: Border.all(color: Color(0xFFFF46414D)),
-                            borderRadius: BorderRadius.circular(5),
+                    ),
+                    // E-mail Text End
+                    SizedBox(
+                      height: 15,
+                    ),
+                    // Write Your E-mail Address Box Start
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color(0xFF46414D),
+                          border: Border.all(
+                            color: Color(0xFF46414D),
+                            width: 1.0,
                           ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(4.0),
-                            child: TextField(
-                              decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: "Write your e-mail address"),
+                          borderRadius: BorderRadius.circular(9),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 8),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: 'Write your e-mail address',
+                              border: InputBorder.none,
                             ),
                           ),
                         ),
                       ),
-                      // Write Your E-mail Address Box End
-                      SizedBox(
-                        height: 15,
-                      ),
-                      // Phone Number Text Start
-                      Container(
-                        width: double.infinity,
+                    ),
+                    // Write Your E-mail Address Box End
+                    SizedBox(
+                      height: 15,
+                    ),
+                    // Phone Number Text Start
+                    Container(
+                      width: double.infinity,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 24),
                         child: Text(
                           "Phone Number",
                           style: TextStyle(
@@ -296,42 +314,47 @@ class _MobilScreenState extends State<MobilScreen> {
                           ),
                         ),
                       ),
-                      // Phone Number Text End
-                      SizedBox(
-                        height: 15,
-                      ),
-                      // Write Your Phone Number Box Start
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                        child: Container(
-                          height: 34,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFFF46414D),
-                            border: Border.all(color: Color(0xFFFF46414D)),
-                            borderRadius: BorderRadius.circular(5),
+                    ),
+                    // Phone Number Text End
+                    SizedBox(
+                      height: 15,
+                    ),
+                    // Write Your Phone Number Box Start
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color(0xFF46414D),
+                          border: Border.all(
+                            color: Color(0xFF46414D),
+                            width: 1.0,
                           ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(4.0),
-                            child: TextFormField(
-                              keyboardType: TextInputType.number,
-                              inputFormatters: [
-                                FilteringTextInputFormatter.allow(
-                                    RegExp(r"[0-9]"))
-                              ],
-                              decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  hintText: "Write your phone number"),
-                            ),
+                          borderRadius: BorderRadius.circular(9),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 8),
+                          child: TextFormField(
+                            keyboardType: TextInputType.number,
+                            inputFormatters: [
+                              FilteringTextInputFormatter.allow(
+                                  RegExp(r"[0-9]"))
+                            ],
+                            decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText: "Write your phone number"),
                           ),
                         ),
                       ),
-                      // Write Your Phone Number Box End
-                      SizedBox(
-                        height: 15,
-                      ),
-                      // Gender Text Start
-                      Container(
-                        width: double.infinity,
+                    ),
+                    // Write Your Phone Number Box End
+                    SizedBox(
+                      height: 15,
+                    ),
+                    // Gender Text Start
+                    Container(
+                      width: double.infinity,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 25),
                         child: Text(
                           "Gender",
                           style: TextStyle(
@@ -341,134 +364,120 @@ class _MobilScreenState extends State<MobilScreen> {
                           ),
                         ),
                       ),
-                      // Gender Text End
-                      SizedBox(
-                        height: 15,
-                      ),
-                      // Gender Selection Box Start
-                      Padding(
-                        padding: const EdgeInsets.only(left: 25),
-                        child: Wrap(
-                          alignment: WrapAlignment.spaceBetween,
+                    ),
+                    // Gender Text End
+                    SizedBox(
+                      height: 15,
+                    ),
+                    // Gender Selection Box Start
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
                           children: [
-                            Row(
+                            Column(
                               children: [
-                                Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          right: 15, left: 15),
-                                      child: Text(
-                                        "Male",
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.w200,
-                                            fontSize: 15),
-                                      ),
-                                    ),
-                                    Radio(
-                                        value: Cinsiyet.erkek,
-                                        groupValue: userSex,
-                                        onChanged: (value) {
-                                          userSex = value;
-                                          setState(() {});
-                                        }),
-                                  ],
+                                Text(
+                                  "  Male  ",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w200,
+                                      fontSize: 15),
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 90.0),
-                                  child: Column(
-                                    children: [
-                                      Text(
-                                        "Female",
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.w200,
-                                            fontSize: 15),
-                                      ),
-                                      Radio(
-                                          value: Cinsiyet.kadin,
-                                          groupValue: userSex,
-                                          onChanged: (value) {
-                                            userSex = value;
-                                            setState(() {});
-                                          }),
-                                    ],
-                                  ),
-                                ),
+                                Radio(
+                                    value: Cinsiyet.erkek,
+                                    groupValue: userSex,
+                                    onChanged: (value) {
+                                      userSex = value;
+                                      setState(() {});
+                                    }),
                               ],
                             ),
-                            Row(
+                            Column(
                               children: [
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.only(right: 65, left: 7),
-                                  child: Column(
-                                    children: [
-                                      Text(
-                                        "Special",
-                                        style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.w200,
-                                            fontSize: 15),
-                                      ),
-                                      Radio(
-                                          value: Cinsiyet.Ozel,
-                                          groupValue: userSex,
-                                          onChanged: (value) {
-                                            userSex = value;
-                                            setState(() {});
-                                          }),
-                                    ],
-                                  ),
+                                Text(
+                                  "Special",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w200,
+                                      fontSize: 15),
                                 ),
-                                Column(
-                                  children: [
-                                    Wrap(
-                                      children: [
-                                        Text(
-                                          "I prefer not to say",
-                                          style: TextStyle(
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.w200,
-                                              fontSize: 15),
-                                        ),
-                                      ],
-                                    ),
-                                    Radio(
-                                        value: Cinsiyet.Ozel2,
-                                        groupValue: userSex,
-                                        onChanged: (value) {
-                                          userSex = value;
-                                          setState(() {});
-                                        }),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                    right: 60,
-                                  ),
-                                  child: ElevatedButton(
-                                    onPressed: () {
-                                      onaybuton();
-                                    },
-                                    child: Text("Save"),
-                                  ),
-                                ),
+                                Radio(
+                                    value: Cinsiyet.Ozel,
+                                    groupValue: userSex,
+                                    onChanged: (value) {
+                                      userSex = value;
+                                      setState(() {});
+                                    }),
                               ],
                             ),
                           ],
                         ),
-                      ),
-                      // Gender Selection Box End
-                    ],
-                  ),
+                        Column(
+                          children: [
+                            Column(
+                              children: [
+                                Text(
+                                  "Female",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w200,
+                                      fontSize: 15),
+                                ),
+                                Radio(
+                                    value: Cinsiyet.kadin,
+                                    groupValue: userSex,
+                                    onChanged: (value) {
+                                      userSex = value;
+                                      setState(() {});
+                                    }),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                Text(
+                                  "I prefer not to say",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w200,
+                                      fontSize: 15),
+                                ),
+                                Radio(
+                                    value: Cinsiyet.Ozel2,
+                                    groupValue: userSex,
+                                    onChanged: (value) {
+                                      userSex = value;
+                                      setState(() {});
+                                    }),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            right: 30,
+                          ),
+                          child: ElevatedButton(
+                            onPressed: () {
+                              onaybuton();
+                            },
+                            child: Text("Save"),
+                          ),
+                        ),
+                      ],
+                    ),
+                    // Gender Selection Box End
+                  ],
                 )
+                // Textfield , BoxDecoration and Gender Parts End
               ],
             ),
           ),

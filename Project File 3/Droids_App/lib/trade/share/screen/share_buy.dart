@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -43,79 +45,84 @@ class _ShareScreenState extends State<ShareScreen> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(27, 32, 43, 1),
       body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width,
-              height: 40,
-              color: Color.fromRGBO(27, 32, 43, 1),
-              child: InkWell(
-                  onTap: () {
-                    Navigator.of(context).pop();
-                  },
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Icon(
-                        Icons.chevron_left_rounded,
-                        size: 40,
-                      ),
-                    ],
-                  )),
-            ),
-            SizedBox(
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height / 2,
-              child: Candlesticks(
-                candles: candles,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
+              Container(
+                width: MediaQuery.of(context).size.width,
+                height: 40,
+                color: Color.fromRGBO(27, 32, 43, 1),
+                child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Icon(
+                          Icons.chevron_left_rounded,
+                          size: 40,
+                        ),
+                      ],
+                    )),
               ),
-            ),
-            SizedBox(
-              height: 60,
-            ),
-            Column(
-              children: [
-                Container(
-                    color: Color.fromRGBO(27, 32, 43, 1),
-                    width: MediaQuery.of(context).size.width / 1.1,
-                    height: MediaQuery.of(context).size.height / 4,
-                    child: Limit()),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      ElevatedButton(
-                        child: Text('BUY'),
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.green,
-                          textStyle: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontStyle: FontStyle.normal),
+              SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 2,
+                child: Candlesticks(
+                  candles: candles,
+                ),
+              ),
+              SizedBox(
+                height: 60,
+              ),
+              Column(
+                children: [
+                  Container(
+                      color: Color.fromRGBO(27, 32, 43, 1),
+                      width: MediaQuery.of(context).size.width / 1.1,
+                      height: MediaQuery.of(context).size.height / 4,
+                      child: Limit()),
+                  // Buy and Sell Button Start
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        ElevatedButton(
+                          child: Text('BUY'),
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.green,
+                            textStyle: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontStyle: FontStyle.normal),
+                          ),
+                          onPressed: () {},
                         ),
-                        onPressed: () {},
-                      ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      ElevatedButton(
-                        child: Text('SELL'),
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.red,
-                          textStyle: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontStyle: FontStyle.normal),
+                        SizedBox(
+                          width: 20,
                         ),
-                        onPressed: () {},
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            ),
-          ],
+                        ElevatedButton(
+                          child: Text('SELL'),
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.red,
+                            textStyle: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontStyle: FontStyle.normal),
+                          ),
+                          onPressed: () {},
+                        ),
+                      ],
+                    ),
+                  )
+                  // Buy and Sell Button End
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

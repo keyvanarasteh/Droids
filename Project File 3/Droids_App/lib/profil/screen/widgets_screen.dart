@@ -36,6 +36,7 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
         child: SingleChildScrollView(
           child: Column(
             children: [
+              // Question Title Text Start
               Padding(
                 padding: const EdgeInsets.only(top: 10),
                 child: Align(
@@ -49,16 +50,16 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                   ),
                 ),
               ),
+              // Question Title Text End
               SizedBox(
                 height: 25.0,
               ),
-              // AÇILIP - KAPANAN PANEL KOD BAŞLANGICI
+              // ExpansionPanel List Start
               Container(
                 margin: EdgeInsets.only(),
                 child: Theme(
                   data:
                       Theme.of(context).copyWith(cardColor: Color(0xFF32293C)),
-                  // ExpansionPanelList Başlangıçı
                   child: ExpansionPanelList(
                     dividerColor: Colors.white,
                     expansionCallback: (index, isOpen) {
@@ -66,8 +67,9 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                         kutularinDurumu[index] = !isOpen;
                       });
                     },
+                    // ExpansionPanl Start
                     children: [
-                      // First Question
+                      // First ExpansionPanel Question 
                       ExpansionPanel(
                         headerBuilder: (context, isExpanded) {
                           return Wrap(
@@ -75,7 +77,7 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
-                                  "Password not accepted?",
+                                  "Password not accepted ?",
                                   style: TextStyle(
                                     color: Colors.white,
                                   ),
@@ -95,7 +97,7 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                         ),
                         isExpanded: kutularinDurumu[0],
                       ),
-                      // Second Question
+                      // Second ExpansionPanel Question
                       ExpansionPanel(
                         headerBuilder: (context, isExpanded) {
                           return Wrap(
@@ -103,7 +105,7 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
-                                  "What is pricing",
+                                  "What is pricing ?",
                                   style: TextStyle(
                                     color: Colors.white,
                                   ),
@@ -125,7 +127,7 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                         ]),
                         isExpanded: kutularinDurumu[1],
                       ),
-                      // Third Question
+                      // Third ExpansionPanel Question
                       ExpansionPanel(
                         headerBuilder: (context, isExpanded) {
                           return Wrap(
@@ -133,7 +135,7 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
-                                  "Mail is not coming",
+                                  "Mail is not coming ?",
                                   style: TextStyle(
                                     color: Colors.white,
                                   ),
@@ -155,7 +157,7 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                         ]),
                         isExpanded: kutularinDurumu[2],
                       ),
-                      // Fourth Question
+                      // Fourth ExpansionPanel Question
                       ExpansionPanel(
                         headerBuilder: (context, isExpanded) {
                           return Wrap(
@@ -163,7 +165,7 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                               Padding(
                                 padding: const EdgeInsets.all(10),
                                 child: Text(
-                                  "What can I do in accounting",
+                                  "What can I do in accounting ?",
                                   style: TextStyle(
                                     color: Colors.white,
                                   ),
@@ -185,7 +187,7 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                         ]),
                         isExpanded: kutularinDurumu[3],
                       ),
-                      // Fifth Question
+                      // Fifth ExpansionPanel Question
                       ExpansionPanel(
                         headerBuilder: (context, isExpanded) {
                           return Wrap(
@@ -193,7 +195,7 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
-                                  "Stock Market Tracking Failure",
+                                  "Stock Market Tracking Failure ?",
                                   style: TextStyle(
                                     color: Colors.white,
                                   ),
@@ -216,9 +218,11 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                         isExpanded: kutularinDurumu[4],
                       ),
                     ],
+                    // ExpansionPanel End
                   ),
                 ),
               ),
+               // ExpansionPanel List End
             ],
           ),
         ),

@@ -29,205 +29,208 @@ class _MediaShapeState extends State<MediaShape> {
             ),
             Align(
               alignment: Alignment.center,
-              child: Container(
-                height: 567,
-                width: MediaQuery.of(context).size.width,
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
-                  child: Wrap(
-                      direction: Axis.horizontal,
-                      alignment: WrapAlignment.spaceAround,
-                      runAlignment: WrapAlignment.spaceBetween,
-                      spacing: 20,
-                      runSpacing: 20,
-                      children: [
-                        InkWell(
-                          onTap: () {
-                            Navigator.of(context).pushNamed("/sliver");
-                          },
-                          child: Container(
-                              width: 185,
-                              height: 196,
-                              color: Color.fromARGB(200, 70, 55, 88),
-                              child: Column(
-                                children: [
-                                  Image.asset(
-                                    'assets/images/energy.png',
-                                    width: 75,
-                                    height: 95,
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text("Energy Share",
-                                      style: TextStyle(
-                                        fontSize: 22,
-                                      )),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text("General stock trading",
-                                      style:
-                                          TextStyle(color: Color(0xFF6e6b71)))
-                                ],
-                              )),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            Navigator.of(context).pushNamed("/sliver");
-                          },
-                          child: Container(
-                              width: 185,
-                              height: 196,
-                              color: Color.fromARGB(200, 70, 55, 88),
-                              child: Column(
-                                children: [
-                                  Image.asset(
-                                    'assets/images/material.png',
-                                    width: 75,
-                                    height: 95,
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text("Energy Share",
-                                      style: TextStyle(
-                                        fontSize: 22,
-                                      )),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text("General stock trading",
-                                      style:
-                                          TextStyle(color: Color(0xFF6e6b71)))
-                                ],
-                              )),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            Navigator.of(context).pushNamed("/sliver");
-                          },
-                          child: Container(
-                              width: 185,
-                              height: 196,
-                              color: Color.fromARGB(200, 70, 55, 88),
-                              child: Column(
-                                children: [
-                                  Image.asset(
-                                    'assets/images/isci.png',
-                                    width: 75,
-                                    height: 95,
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text("Energy Share",
-                                      style: TextStyle(
-                                        fontSize: 22,
-                                      )),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text("General stock trading",
-                                      style:
-                                          TextStyle(color: Color(0xFF6e6b71)))
-                                ],
-                              )),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            Navigator.of(context).pushNamed("/sliver");
-                          },
-                          child: Container(
-                              width: 185,
-                              height: 196,
-                              color: Color.fromARGB(200, 70, 55, 88),
-                              child: Column(
-                                children: [
-                                  Image.asset(
-                                    'assets/images/health.png',
-                                    width: 75,
-                                    height: 95,
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text("Energy Share",
-                                      style: TextStyle(
-                                        fontSize: 22,
-                                      )),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text("General stock trading",
-                                      style:
-                                          TextStyle(color: Color(0xFF6e6b71)))
-                                ],
-                              )),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            Navigator.of(context).pushNamed("/sliver");
-                          },
-                          child: Container(
-                              width: 185,
-                              height: 196,
-                              color: Color.fromARGB(200, 70, 55, 88),
-                              child: Column(
-                                children: [
-                                  Image.asset(
-                                    'assets/images/finance.png',
-                                    width: 75,
-                                    height: 95,
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text("Energy Share",
-                                      style: TextStyle(
-                                        fontSize: 22,
-                                      )),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text("General stock trading",
-                                      style:
-                                          TextStyle(color: Color(0xFF6e6b71)))
-                                ],
-                              )),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            Navigator.of(context).pushNamed("/sliver");
-                          },
-                          child: Container(
-                              width: 185,
-                              height: 196,
-                              color: Color.fromARGB(200, 70, 55, 88),
-                              child: Column(
-                                children: [
-                                  Image.asset(
-                                    'assets/images/home.png',
-                                    width: 75,
-                                    height: 95,
-                                  ),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Text("Energy Share",
-                                      style: TextStyle(
-                                        fontSize: 22,
-                                      )),
-                                  SizedBox(
-                                    height: 5,
-                                  ),
-                                  Text("General stock trading",
-                                      style:
-                                          TextStyle(color: Color(0xFF6e6b71)))
-                                ],
-                              )),
-                        ),
-                      ]),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 100.0),
+                child: Container(
+                  height: double.infinity,
+                  width: MediaQuery.of(context).size.width,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.vertical,
+                    child: Wrap(
+                        direction: Axis.horizontal,
+                        alignment: WrapAlignment.spaceAround,
+                        runAlignment: WrapAlignment.spaceBetween,
+                        spacing: 20,
+                        runSpacing: 20,
+                        children: [
+                          InkWell(
+                            onTap: () {
+                              Navigator.of(context).pushNamed("/sliver");
+                            },
+                            child: Container(
+                                width: 185,
+                                height: 196,
+                                color: Color.fromARGB(200, 70, 55, 88),
+                                child: Column(
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/energy.png',
+                                      width: 75,
+                                      height: 95,
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text("Energy Share",
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                        )),
+                                    SizedBox(
+                                      height: 5,
+                                    ),
+                                    Text("General stock trading",
+                                        style:
+                                            TextStyle(color: Color(0xFF6e6b71)))
+                                  ],
+                                )),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.of(context).pushNamed("/sliver");
+                            },
+                            child: Container(
+                                width: 185,
+                                height: 196,
+                                color: Color.fromARGB(200, 70, 55, 88),
+                                child: Column(
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/material.png',
+                                      width: 75,
+                                      height: 95,
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text("Energy Share",
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                        )),
+                                    SizedBox(
+                                      height: 5,
+                                    ),
+                                    Text("General stock trading",
+                                        style:
+                                            TextStyle(color: Color(0xFF6e6b71)))
+                                  ],
+                                )),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.of(context).pushNamed("/sliver");
+                            },
+                            child: Container(
+                                width: 185,
+                                height: 196,
+                                color: Color.fromARGB(200, 70, 55, 88),
+                                child: Column(
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/isci.png',
+                                      width: 75,
+                                      height: 95,
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text("Energy Share",
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                        )),
+                                    SizedBox(
+                                      height: 5,
+                                    ),
+                                    Text("General stock trading",
+                                        style:
+                                            TextStyle(color: Color(0xFF6e6b71)))
+                                  ],
+                                )),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.of(context).pushNamed("/sliver");
+                            },
+                            child: Container(
+                                width: 185,
+                                height: 196,
+                                color: Color.fromARGB(200, 70, 55, 88),
+                                child: Column(
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/health.png',
+                                      width: 75,
+                                      height: 95,
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text("Energy Share",
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                        )),
+                                    SizedBox(
+                                      height: 5,
+                                    ),
+                                    Text("General stock trading",
+                                        style:
+                                            TextStyle(color: Color(0xFF6e6b71)))
+                                  ],
+                                )),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.of(context).pushNamed("/sliver");
+                            },
+                            child: Container(
+                                width: 185,
+                                height: 196,
+                                color: Color.fromARGB(200, 70, 55, 88),
+                                child: Column(
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/finance.png',
+                                      width: 75,
+                                      height: 95,
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text("Energy Share",
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                        )),
+                                    SizedBox(
+                                      height: 5,
+                                    ),
+                                    Text("General stock trading",
+                                        style:
+                                            TextStyle(color: Color(0xFF6e6b71)))
+                                  ],
+                                )),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.of(context).pushNamed("/sliver");
+                            },
+                            child: Container(
+                                width: 185,
+                                height: 196,
+                                color: Color.fromARGB(200, 70, 55, 88),
+                                child: Column(
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/home.png',
+                                      width: 75,
+                                      height: 95,
+                                    ),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text("Energy Share",
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                        )),
+                                    SizedBox(
+                                      height: 5,
+                                    ),
+                                    Text("General stock trading",
+                                        style:
+                                            TextStyle(color: Color(0xFF6e6b71)))
+                                  ],
+                                )),
+                          ),
+                        ]),
+                  ),
                 ),
               ),
             ),

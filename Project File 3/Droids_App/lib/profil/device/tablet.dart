@@ -1,9 +1,9 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
-import 'package:proje/profil/screen/media_configuration.dart';
+
 import 'package:proje/profil/screen/media_profile_leftsidebar.dart';
 import 'package:proje/profil/screen/mobil_Screen.dart';
-import 'package:proje/profil/screen/widgets_screen.dart';
-import 'package:proje/common/mediaappbar.dart';
 
 class Tablet extends StatefulWidget {
   const Tablet({super.key});

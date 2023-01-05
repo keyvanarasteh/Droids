@@ -1,12 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:proje/common/media_drawer_mini.dart';
-import 'package:proje/common/mediaappbar.dart';
+import 'package:proje/common/main_appbar.dart';
+import 'package:proje/common/media_drawer_v2.dart';
 import 'package:proje/profil/screen/media_configuration.dart';
 import 'package:proje/profil/screen/media_profile_leftsidebar.dart';
-import 'package:proje/profil/screen/mobil_Screen.dart';
-import 'package:proje/profil/screen/widgets_screen.dart';
 
 class Mobile2 extends StatefulWidget {
   const Mobile2({super.key});
@@ -20,60 +18,10 @@ class _Mobile2State extends State<Mobile2> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFF191321),
-      drawer: MediaDrawerMini(),
+      drawer: MediaDrawerMiniV2(),
       appBar: AppBar(
         backgroundColor: Color(0xFF191321),
-        actions: [
-          Row(
-            // // AppBar 2 Icon - User Logo Card
-            children: [
-              Container(
-                  //Notfication Icon
-                  padding: EdgeInsets.all(3.0),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF241B2E),
-                    shape: BoxShape.circle,
-                  ),
-                  child: IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.mail_outline_outlined),
-                  )),
-              SizedBox(
-                width: 10,
-              ),
-              Container(
-                  //Notfication Icon
-                  padding: EdgeInsets.all(3.0),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF241B2E),
-                    shape: BoxShape.circle,
-                  ),
-                  child: IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.notifications_none_sharp),
-                  )),
-              SizedBox(
-                width: 3.0,
-              ),
-              Container(
-                // User Logo Text
-                padding: EdgeInsets.only(right: 20),
-                height: 32,
-                decoration: BoxDecoration(
-                  color: Color(0xFF241B2E),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Row(children: [
-                  CircleAvatar(
-                    radius: 22,
-                    backgroundImage: AssetImage('assets/images/avatar.jpg'),
-                  ),
-                  Text("Mr Chaychi")
-                ]),
-              ),
-            ],
-          )
-        ],
+        actions: [MainAppBar()],
         title: Padding(
           padding: const EdgeInsets.only(right: 0),
           child: Container(

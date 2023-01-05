@@ -26,6 +26,7 @@ class _LastTransactionState extends State<LastTransaction> {
         ),
         child: Column(
           children: [
+            // Title Text Start
             Container(
               width: double.infinity,
               child: Padding(
@@ -39,9 +40,11 @@ class _LastTransactionState extends State<LastTransaction> {
                 ),
               ),
             ),
+            // Title Text End
             SizedBox(
               height: 30,
             ),
+            // ListView Start
             Expanded(
               child: ListView(
                 children: [
@@ -97,6 +100,8 @@ class _LastTransactionState extends State<LastTransaction> {
                 ],
               ),
             ),
+            // ListView End
+            // See All Transaction Start
             Container(
               height: 50.0,
               width: 450,
@@ -133,6 +138,7 @@ class _LastTransactionState extends State<LastTransaction> {
                 ),
               ),
             ),
+            // See All Transaction End
           ],
         ),
       ),

@@ -15,24 +15,23 @@ class ProfileMenu extends StatelessWidget {
           child: Row(
             children: [
               Align(
+                  // Munuleri kapsayan Containerim
                 child: Container(
                   width: MediaQuery.of(context).size.width + 100,
-                  // Munuleri kapsayan cotainerım
-
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
                     color: Color(0xFF241B2E),
                   ),
-                  child: Row(
                       // Menu içeriğimin bulunduğu kısım
+                  child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Row(
                           //Menüde bulunan yazı buttonları
+                        Row(
                           children: [
-                            TextButton.icon(
                               // <-- TextButton
+                            TextButton.icon(
                               onPressed: () {
                                 Navigator.of(context)
                                     .pushNamed("/Profile_Section1");
@@ -48,8 +47,8 @@ class ProfileMenu extends StatelessWidget {
                             ),
                           ],
                         ),
-                        TextButton.icon(
                           // <-- TextButton
+                        TextButton.icon(
                           onPressed: () {
                             Navigator.of(context)
                                 .pushNamed("/Profile_Section2");
@@ -64,8 +63,8 @@ class ProfileMenu extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
-                        TextButton.icon(
                           // <-- TextButton
+                        TextButton.icon(
                           onPressed: () {
                             Navigator.of(context)
                                 .pushNamed("/Profile_Section3");

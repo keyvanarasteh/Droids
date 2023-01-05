@@ -1,9 +1,10 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:proje/home/screen/card.dart';
 import 'package:proje/home/screen/chart.dart';
 import 'package:proje/home/screen/last_transaction.dart';
 import 'package:proje/home/screen/send_money.dart';
-import 'package:proje/common/mediaappbar.dart';
 
 class Desktop extends StatefulWidget {
   const Desktop({super.key});

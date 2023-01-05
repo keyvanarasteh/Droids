@@ -1,9 +1,10 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:proje/profil/screen/media_configuration.dart';
 import 'package:proje/profil/screen/media_profile_leftsidebar.dart';
 import 'package:proje/profil/screen/mobil_Screen.dart';
 import 'package:proje/profil/screen/widgets_screen.dart';
-import 'package:proje/common/mediaappbar.dart';
 
 class Large extends StatefulWidget {
   const Large({super.key});
@@ -21,6 +22,7 @@ class _LargeState extends State<Large> {
         children: [
           Expanded(
             child: Row(
+              // ignore: prefer_const_literals_to_create_immutables
               children: [
                 SizedBox(
                   width: 10,

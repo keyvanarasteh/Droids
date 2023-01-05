@@ -17,39 +17,41 @@ class _MediaDrawerMiniIconState extends State<MediaDrawerMiniIcon> {
     return Drawer(
       backgroundColor: Color(0xFF241B2E),
       width: 140,
-      child: Column(
+      child: 
+      Column(
         mainAxisAlignment:
             MainAxisAlignment.spaceBetween, //Menü column konumlandırma
         children: [
+          // Menu ListTile
           Column(
             children: [
               SizedBox(
                 height: 40,
               ),
-              ListTile(
                 // Menu Home
+              ListTile(
 
                 leading: Icon(Icons.home),
                 onTap: () {
                   Navigator.of(context).pushNamed("/Home_Screen");
                 },
               ),
-              ListTile(
                 // Menu Invocies
+              ListTile(
                 leading: Icon(Icons.person),
                 onTap: () {
                   Navigator.of(context).pushNamed("/Profile_Screen");
                 },
               ),
-              ListTile(
                 //Menu Withdraw
+              ListTile(
                 leading: Icon(Icons.insert_chart_outlined_rounded),
                 onTap: () {
                   Navigator.of(context).pushNamed("/Shape_Screen");
                 },
               ),
-              ListTile(
                 //Menu My Bank
+              ListTile(
                 leading: Icon(Icons.credit_card),
 
                 onTap: () {
@@ -57,27 +59,27 @@ class _MediaDrawerMiniIconState extends State<MediaDrawerMiniIcon> {
                 },
               ),
               Divider(),
-              ListTile(
                 //Menu Settings
+              ListTile(
                 leading: Icon(Icons.notifications),
 
                 onTap: () => null,
               ),
-              ListTile(
                 //Menu Settings
+              ListTile(
                 leading: Icon(Icons.description_outlined),
 
                 onTap: () => null,
               ),
-              ListTile(
                 //Menu Settings
+              ListTile(
                 leading: Icon(Icons.settings),
 
                 onTap: () => null,
               ),
               Divider(),
-              ListTile(
                 //Menu Logout
+              ListTile(
                 leading: Icon(Icons.logout_outlined),
 
                 onTap: () => null,

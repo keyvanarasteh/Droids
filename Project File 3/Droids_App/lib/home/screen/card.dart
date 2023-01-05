@@ -40,12 +40,13 @@ class _CardBoxState extends State<CardBox> {
               borderRadius: BorderRadius.circular(8),
               color: Color(0xFF191321),
             ),
+            // Cards Row 
             child: Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Row(
                     // Cards Row
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Image.asset('assets/images/card1.png',
@@ -54,10 +55,10 @@ class _CardBoxState extends State<CardBox> {
                           width: 160, height: 120, fit: BoxFit.fill),
                     ],
                   ),
+                    // Cards Row Text
                   Padding(
                     padding: const EdgeInsets.only(top: 8.0),
                     child: Row(
-                      // Cards Row Text
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Text(
@@ -75,8 +76,8 @@ class _CardBoxState extends State<CardBox> {
                       ],
                     ),
                   ),
-                  Row(
                     // Cards Row Bottom Text
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Text("12/26"),
@@ -102,16 +103,16 @@ class _CardBoxState extends State<CardBox> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Row(
                     // Cards Row
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Image.asset('assets/images/card1.png',
                           width: 160, height: 120, fit: BoxFit.fill),
                       Image.asset('assets/images/card2.png',
                           width: 160, height: 120, fit: BoxFit.fill),
-                      Column(
                         // Cards Row Text
+                      Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Text(
@@ -128,8 +129,8 @@ class _CardBoxState extends State<CardBox> {
                           ),
                         ],
                       ),
-                      Column(
                         // Cards Row Bottom Text
+                      Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Text("12/26"),

@@ -36,8 +36,8 @@ class _ChartState extends State<Chart> {
     if (deviceType == "mobile") {
       return Scaffold(
         backgroundColor: Color(0xFF191321),
-        body: Container(
           // Çarklar
+        body: Container(
           height: MediaQuery.of(context).size.height / 4,
           width: MediaQuery.of(context).size.width + 20,
           decoration: BoxDecoration(
@@ -73,8 +73,8 @@ class _ChartState extends State<Chart> {
     } else if (deviceType == "desktop") {
       return Scaffold(
         backgroundColor: Color(0xFF191321),
-        body: Container(
           // Çarklar
+        body: Container(
           height: MediaQuery.of(context).size.height / 4,
           width: MediaQuery.of(context).size.width + 20,
           decoration: BoxDecoration(
@@ -110,8 +110,8 @@ class _ChartState extends State<Chart> {
     } else {
       return Scaffold(
         backgroundColor: Color(0xFF191321),
-        body: Container(
           // Çarklar
+        body: Container(
           height: MediaQuery.of(context).size.height / 4,
           width: MediaQuery.of(context).size.width + 20,
           decoration: BoxDecoration(

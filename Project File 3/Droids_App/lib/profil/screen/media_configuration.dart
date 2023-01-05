@@ -35,21 +35,21 @@ class _ProfileConfigState extends State<ProfileConfig> {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Container(
               // Munuleri kapsayan cotainerım
+            Container(
               width: MediaQuery.of(context).size.width + 100,
               height: MediaQuery.of(context).size.height / 1.15,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color: Color(0xFF241B2E),
               ),
-              child: Column(
                   // Menu içeriğimin bulunduğu kısım
+              child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                  // Yüzde tahmin slider kısmı
                     Column(
-                      // Yüzde tahmin slider kısmı
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(right: 45.0, top: 20),
@@ -86,17 +86,18 @@ class _ProfileConfigState extends State<ProfileConfig> {
                           },
                         ),
                       ],
-                    ), // Artış bitiş
+                    ), 
+                  // Artış bitiş
 
+                        // Yazı + İmage + Icons
                     Column(
                       children: [
-                        // Yazı + İmage + Icons
                         Text(
                           "Focus Control",
                           style: TextStyle(fontSize: 22),
                         ),
-                        Opacity(
                             // İmage özellikleri ve opacitykontrol fonksiyonu
+                        Opacity(
                             opacity: opacitykontrol,
                             child: ClipRRect(
                                 borderRadius: BorderRadius.circular(22.0),
@@ -104,18 +105,18 @@ class _ProfileConfigState extends State<ProfileConfig> {
                                   'assets/images/avatar.jpg',
                                   width: 120,
                                 ))),
-                        Padding(
                           // Opacity ayarlarımızı yaptığımız iconların row a padding
+                        Padding(
                           padding: const EdgeInsets.only(
                             top: 10.0,
                           ),
+                              // Opacity ayarlarımızı yaptığımız iconlar
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              // Opacity ayarlarımızı yaptığımız iconlar
 
-                              InkWell(
                                 //opacity 0.2  | Icons.looks_one_outlined
+                              InkWell(
                                 onTap: () {
                                   opacitykontrol = 0.2;
                                   setState(() {});
@@ -125,8 +126,8 @@ class _ProfileConfigState extends State<ProfileConfig> {
                                     child: Icon(Icons.looks_one_outlined)),
                               ),
 
-                              InkWell(
                                 //opacity 0.4 | Icons.looks_two_outlined
+                              InkWell(
                                 onTap: () {
                                   opacitykontrol = 0.4;
                                   setState(() {});
@@ -136,8 +137,8 @@ class _ProfileConfigState extends State<ProfileConfig> {
                                     child: Icon(Icons.looks_two_outlined)),
                               ),
 
-                              InkWell(
                                 // opacity 0.6 | Icons.looks_3_outlined
+                              InkWell(
                                 onTap: () {
                                   opacitykontrol = 0.6;
                                   setState(() {});
@@ -147,8 +148,8 @@ class _ProfileConfigState extends State<ProfileConfig> {
                                     child: Icon(Icons.looks_3_outlined)),
                               ),
 
-                              InkWell(
                                 // opacity 1.0 | Icons.looks_4_outlined
+                              InkWell(
                                 onTap: () {
                                   opacitykontrol = 1.0;
                                   setState(() {});

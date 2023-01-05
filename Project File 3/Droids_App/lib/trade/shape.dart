@@ -1,15 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
+import 'package:proje/common/main_appbar.dart';
+import 'package:proje/common/main_appbarDL.dart';
 import 'package:proje/common/media_drawer_mini_icon.dart';
 import 'package:proje/common/media_drawer_v2.dart';
-import 'package:proje/profil/device/mobile.dart';
-import 'package:proje/profil/device/tablet.dart';
-import 'package:proje/profil/device/desktop.dart';
-import 'package:proje/profil/device/large.dart';
-import 'package:proje/common/media_drawer_mini.dart';
-import 'package:proje/common/mediaappbar.dart';
 import 'package:proje/trade/screen/media_shape.dart';
 
 class ShapeScreen extends StatefulWidget {
@@ -41,50 +36,116 @@ class _ShapeScreenState extends State<ShapeScreen> {
     var deviceType = checkDevice(scrWidth);
     Widget buildScreen() {
       if (deviceType == "mobile") {
-        return Stack(
-          children: [
-            MediaShape(),
-            MenuAciksa
-                ? Positioned(
-                    child: MediaDrawerMini(),
-                  )
-                : Positioned(
-                    width: 0,
-                    height: 0,
-                    child: Text(''),
-                  ),
-          ],
+        return Scaffold(
+          drawer: MediaDrawerMiniV2(),
+          appBar: AppBar(
+            backgroundColor: Color(0xFF191321),
+            actions: const [MainAppBar()],
+            title: Padding(
+              padding: const EdgeInsets.only(right: 0),
+              child: Container(
+                child: Image.asset(
+                  'assets/images/logo_mini.jpg',
+                  width: 44,
+                  height: 44,
+                ),
+              ),
+            ),
+          ),
+          body: Stack(
+            children: const [
+              MediaShape(),
+            ],
+          ),
         );
       } else if (deviceType == "tablet") {
-        return Stack(
-          children: [
-            MediaShape(),
-            MenuAciksa
-                ? Positioned(
-                    child: MediaDrawerMini(),
-                  )
-                : Positioned(
-                    width: 0,
-                    height: 0,
-                    child: Text(''),
-                  ),
-          ],
+        return Scaffold(
+          drawer: MediaDrawerMiniV2(),
+          appBar: AppBar(
+            backgroundColor: Color(0xFF191321),
+            actions: [MainAppBar()],
+            title: Padding(
+              padding: const EdgeInsets.only(right: 0),
+              child: Container(
+                child: Image.asset(
+                  'assets/images/logo_mini.jpg',
+                  width: 44,
+                  height: 44,
+                ),
+              ),
+            ),
+          ),
+          body: Stack(
+            children: [
+              MediaShape(),
+            ],
+          ),
         );
       } else if (deviceType == "desktop") {
-        return Row(
-          children: [
-            Expanded(flex: 1, child: MediaDrawerMiniIcon()),
-            Expanded(flex: 10, child: MediaShape()),
-          ],
+        return Scaffold(
+          appBar: AppBar(
+            automaticallyImplyLeading: false,
+            backgroundColor: Color(0xFF191321),
+            actions: [MainAppBarDl()],
+            title: Padding(
+              padding: const EdgeInsets.only(right: 0),
+              child: Row(
+                children: [
+                  Container(
+                    child: Image.asset(
+                      'assets/images/logo.jpg',
+                      width: 133,
+                      height: 84,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 42,
+                  ),
+                  Text("Dashboard")
+                ],
+              ),
+            ),
+          ),
+          body: Row(
+            children: const [
+              Expanded(flex: 1, child: MediaDrawerMiniIcon()),
+              Expanded(flex: 10, child: MediaShape()),
+            ],
+          ),
         );
 
         //Large Ekranı yeni MenuV2 eklendi ve entegre edildi
       } else {
-        return Row(
-          children: [
-            Expanded(flex: 2, child: MediaDrawerMiniV2()),
-            Expanded(flex: 9, child: MediaShape()),
-          ],
+        return Scaffold(
+          appBar: AppBar(
+            automaticallyImplyLeading: false,
+            backgroundColor: Color(0xFF191321),
+            actions: [MainAppBarDl()],
+            title: Padding(
+              padding: const EdgeInsets.only(right: 0),
+              child: Row(
+                children: [
+                  Container(
+                    child: Image.asset(
+                      'assets/images/logo.jpg',
+                      width: 133,
+                      height: 84,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 42,
+                  ),
+                  Text("Dashboard")
+                ],
+              ),
+            ),
+          ),
+          body: Row(
+            children: const [
+              Expanded(flex: 2, child: MediaDrawerMiniV2()),
+              Expanded(flex: 9, child: MediaShape()),
+            ],
+          ),
         );
       }
     }
@@ -95,39 +156,10 @@ class _ShapeScreenState extends State<ShapeScreen> {
         body: SafeArea(
           child: Column(
             children: [
-              MediaAppBar(
-                MenuTiklama: () => {
-                  if (MenuAciksa)
-                    {
-                      setState(
-                        () {
-                          MenuAciksa = false;
-                        },
-                      )
-                    }
-                  else
-                    {
-                      setState(
-                        () {
-                          MenuAciksa = true;
-                        },
-                      )
-                    }
-                },
-              ),
               //Media Appbar Gövdesi
-              SizedBox(
-                width: double.infinity,
-                height: 20,
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    color: Color(0xFFF191321),
-                  ),
-                ),
-              ),
               Expanded(
                 child: buildScreen(),
-              )
+              ),
             ],
           ),
         ));
