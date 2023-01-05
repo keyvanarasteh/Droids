@@ -24,7 +24,7 @@
 **3.Project 29/12/2022**
 
 Project File 3/Droids_App  En Güncel Dosyamız İçerisinde Sdk İndirip Telefona Kurulum Yapabilirsiniz
-> KÜTÜPHANE SAYISI:4   KULLANILAN WİDGET SAYISI: 42
+> **KÜTÜPHANE SAYISI:4   KULLANILAN WİDGET SAYISI: 42**
 >>Hisse Ekranı Eklendi
 >>>Hisselerin Takip Ekranı Eklendi
 >>>>Hisse Takip Ekranın İçerisinde Hisse Grafiği Eklendi Sadece Bitcoin Gözükmekte Canlı
