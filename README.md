@@ -22,18 +22,19 @@
 ![hafta2](https://user-images.githubusercontent.com/115783349/209242479-22afd2d3-0376-400f-b4c7-986314ffdf52.jpg)
 
 **3.Project 29/12/2022**
-< KÜTÜPHANE SAYISI:4   KULLANILAN WİDGET SAYISI: 42
+
 Project File 3/Droids_App  En Güncel Dosyamız İçerisinde Sdk İndirip Telefona Kurulum Yapabilirsiniz
->Hisse Ekranı Eklendi
->>Hisselerin Takip Ekranı Eklendi
->>>Hisse Takip Ekranın İçerisinde Hisse Grafiği Eklendi Sadece Bitcoin Gözükmekte Canlı
->>>>Padding Ve Genel Yapı Fixlendi
->>>>>Uygulama Haline Getirildi-Uygulama Icon Eklendi-Uygulama İsmi Eklendi
->>>>>>Kart Ekleme Menüsü Eklendi
->>>>>>>Profil Ayarları Kısmına Mobil Kullanıcıları Erişimi İçi Menüler Eklendi 
->>>>>>>>SafeArea Eklendi AppBar Taşma Sorunu Fix
->>>>>>>>>Drawer Tasarımında Değişikliğe Gidildi
->>>>>>>>>>Hafta1-Hafta2-Hafta3 Birleştirildi Hepsi Tek Dosyada Menü Bağlantıları Yapıldı
+> KÜTÜPHANE SAYISI:4   KULLANILAN WİDGET SAYISI: 42
+>>Hisse Ekranı Eklendi
+>>>Hisselerin Takip Ekranı Eklendi
+>>>>Hisse Takip Ekranın İçerisinde Hisse Grafiği Eklendi Sadece Bitcoin Gözükmekte Canlı
+>>>>>Padding Ve Genel Yapı Fixlendi
+>>>>>>Uygulama Haline Getirildi-Uygulama Icon Eklendi-Uygulama İsmi Eklendi
+>>>>>>>Kart Ekleme Menüsü Eklendi
+>>>>>>>>Profil Ayarları Kısmına Mobil Kullanıcıları Erişimi İçi Menüler Eklendi 
+>>>>>>>>>SafeArea Eklendi AppBar Taşma Sorunu Fix
+>>>>>>>>>>Drawer Tasarımında Değişikliğe Gidildi
+>>>>>>>>>>>Hafta1-Hafta2-Hafta3 Birleştirildi Hepsi Tek Dosyada Menü Bağlantıları Yapıldı
 
  
 ![sc1](https://user-images.githubusercontent.com/115783349/210027829-0e59f6ba-9e6c-4f4e-914b-40a26d3adb88.jpg)
