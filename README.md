@@ -42,3 +42,7 @@ Project File 3/Droids_App  En Güncel Dosyamız İçerisinde Sdk İndirip Telefo
 ![sc5](https://user-images.githubusercontent.com/115783349/210027842-885d8410-ddbc-46fc-bc7b-5ef1bcbfa01e.png)
 ![sc3](https://user-images.githubusercontent.com/115783349/210027854-27efbb1c-cdeb-4a34-a4ef-81dddde3f178.png)
 ![sc4](https://user-images.githubusercontent.com/115783349/210027856-ef953255-d7fc-4928-b9eb-a6c016a74295.png)
+![Ekran görüntüsü 2023-01-18 200044](https://user-images.githubusercontent.com/115783349/213577380-7346deda-50a0-4a27-9dea-456774ec01b6.jpg)
+![settigngs tel](https://user-images.githubusercontent.com/115783349/213577444-1b25a551-adcb-4894-969c-b1373d7b8f24.jpg)
+
+
