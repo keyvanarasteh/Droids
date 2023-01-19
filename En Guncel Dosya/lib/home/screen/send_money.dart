@@ -37,9 +37,12 @@ class _SendMoneyState extends State<SendMoney> {
                 child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                NewWidget(
-                  resim: "assets/images/add.jpg",
-                  yazi: "add",
+                Padding(
+                  padding: const EdgeInsets.only(left: 15),
+                  child: NewWidget(
+                    resim: "assets/images/add.jpg",
+                    yazi: "add",
+                  ),
                 ),
                 SizedBox(
                   width: 20,
