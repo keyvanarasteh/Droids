@@ -8,6 +8,7 @@
 >> Doğan Sarı 211216018 Dogansari
 >>>Anıl Şentürk 211216020 Yuuttsu
 >>>>Muhammed Karataş 211216062 muhammedkaratas1
+>https://www.canva.com/design/DAFYB66qOpo/1vKn4pXSctkOI_RhY4HGSw/view?utm_content=DAFYB66qOpo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 
 [Supervisor: Keyvan Arasteh](https://github.com/keyvanarasteh/)
 
